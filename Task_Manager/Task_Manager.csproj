@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED981501-61A4-4B1D-A51B-4F15936B0177}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Task_Manager</RootNamespace>
+    <AssemblyName>Task_Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Calendar.NET">
+      <HintPath>..\..\TaskManager\TaskManager\Calendar.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEmpUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddEmpUC.Designer.cs">
+      <DependentUpon>AddEmpUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProjUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddProjUC.Designer.cs">
+      <DependentUpon>AddProjUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminClass.cs" />
+    <Compile Include="AssignTaskUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssignTaskUC.Designer.cs">
+      <DependentUpon>AssignTaskUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalendarUC.Designer.cs">
+      <DependentUpon>CalendarUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeClass.cs" />
+    <Compile Include="EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerForm.Designer.cs">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskClass.cs" />
+    <Compile Include="ViewEmpUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewEmpUC.Designer.cs">
+      <DependentUpon>ViewEmpUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProjUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewProjUC.Designer.cs">
+      <DependentUpon>ViewProjUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTasksUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewTasksUC.Designer.cs">
+      <DependentUpon>ViewTasksUC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEmpUC.resx">
+      <DependentUpon>AddEmpUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProjUC.resx">
+      <DependentUpon>AddProjUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignTaskUC.resx">
+      <DependentUpon>AssignTaskUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarUC.resx">
+      <DependentUpon>CalendarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerForm.resx">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ViewEmpUC.resx">
+      <DependentUpon>ViewEmpUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProjUC.resx">
+      <DependentUpon>ViewProjUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTasksUC.resx">
+      <DependentUpon>ViewTasksUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-128 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passCyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task-03-128 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task-03-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taskCyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taskSky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userCyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data-Edit-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left-Arrow-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left-Arrow-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left-Arrow-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous-24 %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

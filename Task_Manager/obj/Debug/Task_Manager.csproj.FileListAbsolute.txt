@@ -1,0 +1,77 @@
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe.config
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\bin\Debug\Task_Manager.pdb
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.LoginForm.resources
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.Properties.Resources.resources
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.GenerateResource.Cache
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.exe
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.pdb
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\bin\Debug\Calendar.NET.dll
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ManagerForm.resources
+c:\users\karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csprojResolveAssemblyReference.cache
+C:\Users\Karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.CalendarUC.resources
+C:\Users\Karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddEmpUC.resources
+C:\Users\Karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddProjUC.resources
+C:\Users\Karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewEmpUC.resources
+C:\Users\Karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewProjTaskUC.resources
+C:\Users\Karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AdminForm.resources
+C:\Users\Karim72\documents\visual studio 2015\Projects\Task_Manager\Task_Manager\obj\Debug\Task_Manager.EmployeeForm.resources
+M:\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe.config
+M:\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe
+M:\Task_Manager\Task_Manager\bin\Debug\Task_Manager.pdb
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csprojAssemblyReference.cache
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddEmpUC.resources
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddProjUC.resources
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.CalendarUC.resources
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.EmployeeForm.resources
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.LoginForm.resources
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AdminForm.resources
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ManagerForm.resources
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.Properties.Resources.resources
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewEmpUC.resources
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewProjTaskUC.resources
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.GenerateResource.cache
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.CoreCompileInputs.cache
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.CopyComplete
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.exe
+M:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.pdb
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe.config
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\bin\Debug\Task_Manager.pdb
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddEmpUC.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddProjUC.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.CalendarUC.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.EmployeeForm.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.LoginForm.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AdminForm.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ManagerForm.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.Properties.Resources.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewEmpUC.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.GenerateResource.Cache
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.exe
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.pdb
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csprojResolveAssemblyReference.cache
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe.config
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\bin\Debug\Task_Manager.pdb
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddEmpUC.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddProjUC.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AssignTaskUC.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.CalendarUC.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.EmployeeForm.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.LoginForm.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AdminForm.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ManagerForm.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.Properties.Resources.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewEmpUC.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.GenerateResource.cache
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.CoreCompileInputs.cache
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.CopyComplete
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.exe
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.pdb
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csprojAssemblyReference.cache
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewTasksUC.resources
+C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewProjUC.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AssignTaskUC.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewProjUC.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewTasksUC.resources
