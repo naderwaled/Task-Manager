@@ -11,7 +11,7 @@ namespace Task_Manager
 {
     class AdminClass
     {
-        public string connectstr = "Data Source=DESKTOP-T7ORQ8E\\SQLEXPRESS;Initial Catalog=ISPROJECT1;Integrated Security=True";
+        public string connectstr = "Data Source=LAPTOP-MP5TT4VU\\SQLEXPRESS;Initial Catalog=ISPROJECT1;Integrated Security=True";
         public int id;
         public string username;
         public string password;
@@ -47,8 +47,8 @@ namespace Task_Manager
         public void projectview(ref List<ProjectClass> list)
         {
             //List<ProjectClass> list = new List<ProjectClass>();
-            SqlConnection connect = new SqlConnection("Data Source=DESKTOP-T7ORQ8E\\SQLEXPRESS;Initial Catalog=ISPROJECT1;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand("select * from project", connect);
+            SqlConnection connect = new SqlConnection("Data Source=LAPTOP-MP5TT4VU\\SQLEXPRESS;Initial Catalog=ISPROJECT1;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand("select * from project inner join client on project.project_client_id = client.client_id inner join employee on project.manger_id=employee.employee_id", connect);
             try
             {
                 connect.Open();
@@ -63,25 +63,18 @@ namespace Task_Manager
                     pro.end_time = reader.GetDateTime(4);
                     pro.id_client = (int)reader["project_client_id"];
                     pro.status = (string)reader["project_status"];
-              
                     pro.id_manger = (int)reader["manger_id"];
+                    pro.clinet_name = (string)reader["client_name"];
+                    pro.client_phone = (string)reader["client_phone"];
+                    pro.client_mail = (string)reader["client_mail"];
+                    pro.manger_name = (string)reader["employee_name"];
+
                     list.Add(pro);
 
 
                 }
                 reader.Close();
 
-
-                for (int i = 0; i < list.Count; i++)
-                {
-                  SqlCommand  cmd2 = new SqlCommand("select employee_name from employee where employee_id='" + list[i].id_manger + "'", connect);
-                    reader = cmd2.ExecuteReader();
-                    while (reader.Read())
-                    {
-                        list[i].manger_name = (string)reader["employee_name"];
-                    }
-                reader.Close();
-                }
                 connect.Close();
 
             }
@@ -108,9 +101,10 @@ namespace Task_Manager
                 MessageBox.Show(ex.Message);
             }
         }
-        public void addproject(ProjectClass pro) {
+        public void addproject(ProjectClass pro)
+        {
             SqlConnection connect = new SqlConnection(connectstr);
-            SqlCommand cmd = new SqlCommand("select * from client where client_name='"+pro.clinet_name+"'",connect);
+            SqlCommand cmd = new SqlCommand("select * from client where client_name='" + pro.clinet_name + "'", connect);
             try
             {
                 connect.Open();
@@ -119,43 +113,43 @@ namespace Task_Manager
                 {
                     while (reader.Read())
                     {
-                        pro.id_client = (int)reader["client_id"]; 
+                        pro.id_client = (int)reader["client_id"];
                     }
                     reader.Close();
-                    
+
                     connect.Close();
                     connect.Open();
-                    cmd = new SqlCommand("execute insert_project '"+pro.name+"','"+pro.description+ "','" + pro.start_time + "','" + pro.end_time + "','" + pro.id_client + "','" + pro.status + "','" + pro.id_manger + "'", connect);
+                    cmd = new SqlCommand("execute insert_project '" + pro.name + "','" + pro.description + "','" + pro.start_time + "','" + pro.end_time + "','" + pro.id_client + "','" + pro.status + "','" + pro.id_manger + "'", connect);
                     cmd.ExecuteNonQuery();
                     reader.Close();
                     connect.Close();
                 }
                 catch (Exception ex)
                 {
-                   SqlCommand cmd2 = new SqlCommand("execute insert_client '" + pro.clinet_name + "','" + pro.client_phone + "','" + pro.client_mail + "'", connect);
+                    SqlCommand cmd2 = new SqlCommand("execute insert_client '" + pro.clinet_name + "','" + pro.client_phone + "','" + pro.client_mail + "'", connect);
                     cmd2.ExecuteNonQuery();
                     SqlCommand cmd3 = new SqlCommand("select * from client where client_name='" + pro.clinet_name + "'", connect);
                     reader = cmd3.ExecuteReader();
-                    
-                  
-                        while (reader.Read())
-                        {
-                            pro.id_client = (int)reader["client_id"];
-                        }
-                        reader.Close();
-                        SqlCommand  cmd4 = new SqlCommand("execute insert_project '" + pro.name + "','" + pro.description + "','" + pro.start_time + "','" + pro.end_time + "','" + pro.id_client + "','" + pro.status + "','" + pro.id_manger + "'", connect);
-                        cmd4.ExecuteNonQuery();
-                        connect.Close();
-                    }
 
+
+                    while (reader.Read())
+                    {
+                        pro.id_client = (int)reader["client_id"];
+                    }
+                    reader.Close();
+                    SqlCommand cmd4 = new SqlCommand("execute insert_project '" + pro.name + "','" + pro.description + "','" + pro.start_time + "','" + pro.end_time + "','" + pro.id_client + "','" + pro.status + "','" + pro.id_manger + "'", connect);
+                    cmd4.ExecuteNonQuery();
+                    connect.Close();
                 }
-            catch(Exception ex)
+
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-            }
-        public List<EmployeeClass>viewmanager()
+        }
+        public List<EmployeeClass> viewmanager()
         {
             List<EmployeeClass> emplist = new List<EmployeeClass>();
             SqlConnection connect = new SqlConnection(connectstr);
@@ -164,10 +158,11 @@ namespace Task_Manager
             {
                 connect.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read()){
+                while (reader.Read())
+                {
                     EmployeeClass emp = new EmployeeClass();
                     emp.id = (int)reader["employee_id"];
-                    emp.name =(string) reader["employee_name"];
+                    emp.name = (string)reader["employee_name"];
                     emp.gender = (string)reader["employee_gender"];
                     emp.password = (string)reader["employee_password"];
                     emp.address = (string)reader["employee_address"];
@@ -176,11 +171,12 @@ namespace Task_Manager
                     emp.join_date = reader.GetDateTime(7);
                     emp.rank = (string)reader["employee_rank"];
                     emp.admin_id = (int)reader["admin_id"];
+
                     try
                     {
                         emp.manager_id = (int)reader["manager_id"];
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
 
                     }
@@ -193,21 +189,111 @@ namespace Task_Manager
                 connect.Close();
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             return emplist;
 
         }
+        public void editproject(ProjectClass pro)
+        {
+            SqlConnection connect = new SqlConnection(connectstr);
+            SqlCommand cmd = new SqlCommand("execute edit_project '" + pro.id + "','" + pro.name + "','" + pro.description + "','" + pro.start_time + "','" + pro.end_time + "','" + pro.status + "'", connect);
+            try
+            {
+                connect.Open();
+                cmd.ExecuteNonQuery();
+                connect.Close();
 
             }
-       
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void delete_project(int id)
+        {
+            SqlConnection connect = new SqlConnection(connectstr);
+            SqlCommand cmd = new SqlCommand("execute delete_project '" + id + "'", connect);
+            try
+            {
+                connect.Open();
+                cmd.ExecuteNonQuery();
+                connect.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
-       
-        
+        public void delete_employee(int id)
+        {
+            SqlConnection connect = new SqlConnection(connectstr);
+            SqlCommand cmd = new SqlCommand("execute delete_employee '" + id + "'", connect);
+            try
+            {
+                connect.Open();
+                cmd.ExecuteNonQuery();
+                connect.Close();
 
-        
-    
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void edit_employee(EmployeeClass employee)
+        {
+            SqlConnection connect = new SqlConnection(connectstr);
+            SqlCommand cmd = new SqlCommand("execute edit_employee '" + employee.id + "','" + employee.name + "','" + employee.gender + "','" + employee.password + "','" + employee.address + "','" + employee.phone + "','" + employee.mail + "','" + employee.join_date + "','" + employee.rank + "','" + employee.manager_id + "','" + employee.salary + "','" + employee.hours + "'", connect);
+            try
+            {
+                connect.Open();
+                cmd.ExecuteNonQuery();
+                connect.Close();
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void showtask(ref List<TaskClass>tasklist,int idproject)
+        {
+            SqlConnection connect = new SqlConnection(connectstr);
+            SqlCommand cmd = new SqlCommand("select * from task inner join project on task.task_project_id=project.project_id inner join employee on task.task_employee_id=employee.employee_id where project.project_id='" + idproject+"'",connect);
+            try
+            {
+                connect.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    TaskClass task = new TaskClass();
+
+                    task.id =(int) reader["task_id"];
+                    task.name = (string)reader["task_name"];
+                    task.description = (string)reader["task_description"];
+                    task.start_time = reader.GetDateTime(3);
+                    task.end_time = reader.GetDateTime(4);
+                    task.id_project = (int)reader["task_project_id"];
+                    task.id_employee = (int)reader["task_employee_id"];
+                    task.status = (string)reader["task_status"];
+                    task.project_name = (string)reader["project_name"];
+                    task.employee_name = (string)reader["employee_name"];
+                    tasklist.Add(task);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+    }
+
+
+}

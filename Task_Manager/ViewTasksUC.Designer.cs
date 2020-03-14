@@ -39,6 +39,8 @@
             this.CommentLabelBtn = new System.Windows.Forms.Label();
             this.TaskFinishedBtn = new System.Windows.Forms.Label();
             this.taskStatus = new System.Windows.Forms.Label();
+            this.closeBtn = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // LightTask
@@ -92,7 +94,7 @@
             this.startDuration.AutoSize = true;
             this.startDuration.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startDuration.ForeColor = System.Drawing.Color.White;
-            this.startDuration.Location = new System.Drawing.Point(21, 110);
+            this.startDuration.Location = new System.Drawing.Point(21, 109);
             this.startDuration.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.startDuration.Name = "startDuration";
             this.startDuration.Size = new System.Drawing.Size(219, 31);
@@ -104,7 +106,7 @@
             this.TaskName.AutoSize = true;
             this.TaskName.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TaskName.ForeColor = System.Drawing.Color.White;
-            this.TaskName.Location = new System.Drawing.Point(23, 40);
+            this.TaskName.Location = new System.Drawing.Point(22, 40);
             this.TaskName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TaskName.Name = "TaskName";
             this.TaskName.Size = new System.Drawing.Size(138, 32);
@@ -139,6 +141,7 @@
             this.AssignLabelBtn.Size = new System.Drawing.Size(90, 29);
             this.AssignLabelBtn.TabIndex = 24;
             this.AssignLabelBtn.Text = "Assign";
+            this.AssignLabelBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AssignLabelBtn_MouseClick);
             // 
             // CommentLabelBtn
             // 
@@ -153,6 +156,7 @@
             this.CommentLabelBtn.Size = new System.Drawing.Size(129, 29);
             this.CommentLabelBtn.TabIndex = 20;
             this.CommentLabelBtn.Text = "Comment";
+            this.CommentLabelBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CommentLabelBtn_MouseClick);
             // 
             // TaskFinishedBtn
             // 
@@ -167,6 +171,7 @@
             this.TaskFinishedBtn.Size = new System.Drawing.Size(174, 29);
             this.TaskFinishedBtn.TabIndex = 26;
             this.TaskFinishedBtn.Text = "Task Finished";
+            this.TaskFinishedBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TaskFinishedBtn_MouseClick);
             // 
             // taskStatus
             // 
@@ -175,7 +180,7 @@
             this.taskStatus.Cursor = System.Windows.Forms.Cursors.Default;
             this.taskStatus.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taskStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.taskStatus.Location = new System.Drawing.Point(435, 112);
+            this.taskStatus.Location = new System.Drawing.Point(480, 111);
             this.taskStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.taskStatus.Name = "taskStatus";
             this.taskStatus.Size = new System.Drawing.Size(89, 29);
@@ -183,11 +188,26 @@
             this.taskStatus.Text = "Status";
             this.taskStatus.Visible = false;
             // 
+            // closeBtn
+            // 
+            this.closeBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.closeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeBtn.Image = global::Task_Manager.Properties.Resources.Cancel_128;
+            this.closeBtn.Location = new System.Drawing.Point(584, 3);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(30, 29);
+            this.closeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.closeBtn.TabIndex = 28;
+            this.closeBtn.TabStop = false;
+            this.closeBtn.Visible = false;
+            this.closeBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.closeBtn_MouseClick);
+            // 
             // ViewTasksUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.taskStatus);
             this.Controls.Add(this.TaskFinishedBtn);
             this.Controls.Add(this.TaskName);
@@ -200,7 +220,8 @@
             this.Controls.Add(this.startDuration);
             this.Controls.Add(this.LightTask);
             this.Name = "ViewTasksUC";
-            this.Size = new System.Drawing.Size(617, 183);
+            this.Size = new System.Drawing.Size(616, 183);
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +240,6 @@
         public System.Windows.Forms.Label CommentLabelBtn;
         public System.Windows.Forms.Label TaskFinishedBtn;
         public System.Windows.Forms.Label taskStatus;
+        public System.Windows.Forms.PictureBox closeBtn;
     }
 }

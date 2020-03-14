@@ -48,6 +48,8 @@ namespace Task_Manager
             if (passwordTextbox.Text == "Password")
             {
                 passwordTextbox.Text = "";
+                passwordTextbox.PasswordChar = '*';
+
             }
             passwordPic.Image = Properties.Resources.passCyan;
             usernamePic.Image = Properties.Resources.userWhite;
@@ -82,11 +84,12 @@ namespace Task_Manager
             else if (isManager)
             {
                 EmployeeClass manager = new EmployeeClass();
-                bool isemanager = manager.login(usernameTextbox.Text,passwordTextbox.Text,ref manager);
+                bool isemanager = manager.login(usernameTextbox.Text,passwordTextbox.Text,"Manager",ref manager);
                 if (isemanager == true)
                 {
                     this.Hide();
-                    ManagerForm showManager = new ManagerForm();
+                    ManagerForm showManager = new ManagerForm(manager.id);
+                    showManager.empnow = manager;
                     showManager.WelcomeLabel.Text = "welcome, "+manager.name;
                     showManager.Show();
                 }
@@ -97,11 +100,12 @@ namespace Task_Manager
             else if (isEmployee)
             {
                 EmployeeClass employee = new EmployeeClass();
-                bool isemanager = employee.login(usernameTextbox.Text, passwordTextbox.Text, ref employee);
+                bool isemanager = employee.login(usernameTextbox.Text, passwordTextbox.Text,"Employee", ref employee);
                 if (isemanager == true)
                 {
                     this.Hide();
-                    EmployeeForm showEmployee = new EmployeeForm();
+                    EmployeeForm showEmployee = new EmployeeForm(employee);
+                    showEmployee.empnow = employee;
                     showEmployee.WelcomeLabel.Text = "welcome, " + employee.name;
                     showEmployee.Show();
                 }
@@ -124,6 +128,7 @@ namespace Task_Manager
             if (passwordTextbox.Text == "")
             {
                 passwordTextbox.Text = "Password";
+                passwordTextbox.PasswordChar = '\0';
             }
         }
 
@@ -171,6 +176,19 @@ namespace Task_Manager
 
         private void BackBtn_MouseClick(object sender, MouseEventArgs e)
         {
+            usernamePic.Image = Properties.Resources.userWhite;
+            passwordPic.Image = Properties.Resources.passWhite;
+            if (passwordTextbox.Text != "Password")
+            {
+                passwordTextbox.Clear();
+                passwordTextbox.Text = "Password";
+                passwordTextbox.PasswordChar = '\0';
+            }
+            if (usernameTextbox.Text != "Username")
+            {
+                usernameTextbox.Clear();
+                usernameTextbox.Text = "Username";
+            }
             isAdmin = isManager = isEmployee = false;
             AsAdmin.Visible = true;
             AsManager.Visible = true;
@@ -183,6 +201,6 @@ namespace Task_Manager
             loginBtn.Visible = false;
         }
 
-       
+  
     }
 }

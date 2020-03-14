@@ -13,6 +13,7 @@ namespace Task_Manager
     public partial class AddEmpUC : UserControl
     {
         string gender = "";
+        public EmployeeClass emp= new EmployeeClass();
         public AddEmpUC()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace Task_Manager
         private void FinishEmpBtn_Click(object sender, EventArgs e)
         {
            
-            EmployeeClass emp = new EmployeeClass();
+            
             emp.name = FnameTextbox.Text + " " + LnameTextbox.Text;
             emp.password = PassTextbox.Text;
             emp.phone = PhoneNumTextbox.Text;
@@ -50,7 +51,20 @@ namespace Task_Manager
             emp.mail = EmailTextbox.Text;
             AdminClass newmanger = new AdminClass();
             newmanger.addmanager(emp);
-            
+
+            FnameTextbox.Clear();
+            LnameTextbox.Clear();
+            PassTextbox.Clear();
+            PhoneNumTextbox.Clear();
+            SalaryTextbox.Clear();
+            MaleCheck.Checked = false;
+            FemaleCheck.Checked = false;
+            AddressTextbox.Clear();
+            EmailTextbox.Clear();
+            RankTextBox.Text = "";
+            MessageBox.Show("Employee Added Successfully");
+
+
 
 
 
@@ -70,5 +84,26 @@ namespace Task_Manager
         {
             this.Hide();
         }
+
+        private void editemployee_Click(object sender, EventArgs e)
+        {
+            
+            emp.name = FnameTextbox.Text + " " + LnameTextbox.Text;
+            emp.password = PassTextbox.Text;
+            emp.phone = PhoneNumTextbox.Text;
+            emp.rank = RankTextBox.Text;
+            emp.salary = Convert.ToInt16(SalaryTextbox.Text);
+            emp.gender = gender;
+            emp.address = AddressTextbox.Text;
+            emp.join_date = Convert.ToDateTime(JoinDatePicker.Text);
+            emp.admin_id = 1;
+            AdminClass adm = new AdminClass();
+            adm.edit_employee(emp);
+
+            MessageBox.Show("Employee Edited Successfully");
+
+        }
+
+
     }
 }

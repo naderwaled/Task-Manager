@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcceptRejectAssignedTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AcceptRejectAssignedTask.Designer.cs">
+      <DependentUpon>AcceptRejectAssignedTask.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddEmpUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -69,11 +75,11 @@
     <Compile Include="AssignTaskUC.Designer.cs">
       <DependentUpon>AssignTaskUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalendarUC.cs">
+    <Compile Include="CommentOrAssignUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CalendarUC.Designer.cs">
-      <DependentUpon>CalendarUC.cs</DependentUpon>
+    <Compile Include="CommentOrAssignUC.Designer.cs">
+      <DependentUpon>CommentOrAssignUC.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeeClass.cs" />
     <Compile Include="EmployeeForm.cs">
@@ -122,6 +128,9 @@
     <Compile Include="ViewTasksUC.Designer.cs">
       <DependentUpon>ViewTasksUC.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AcceptRejectAssignedTask.resx">
+      <DependentUpon>AcceptRejectAssignedTask.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddEmpUC.resx">
       <DependentUpon>AddEmpUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,8 +140,8 @@
     <EmbeddedResource Include="AssignTaskUC.resx">
       <DependentUpon>AssignTaskUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CalendarUC.resx">
-      <DependentUpon>CalendarUC.cs</DependentUpon>
+    <EmbeddedResource Include="CommentOrAssignUC.resx">
+      <DependentUpon>CommentOrAssignUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
@@ -234,6 +243,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Previous-24 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bell-128.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

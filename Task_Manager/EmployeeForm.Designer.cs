@@ -35,11 +35,13 @@
             this.OnViewProj = new System.Windows.Forms.Panel();
             this.OnHome = new System.Windows.Forms.Panel();
             this.HomeBtn = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.assignedTaskCount = new System.Windows.Forms.Label();
             this.CloseBtn = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.assignedTaskToMe = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -50,6 +52,7 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignedTaskToMe)).BeginInit();
             this.SuspendLayout();
             // 
             // LogoutBtn
@@ -63,10 +66,9 @@
             this.LogoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogoutBtn.Font = new System.Drawing.Font("Palatino Linotype", 14F);
             this.LogoutBtn.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.LogoutBtn.Location = new System.Drawing.Point(0, 476);
-            this.LogoutBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LogoutBtn.Location = new System.Drawing.Point(0, 295);
             this.LogoutBtn.Name = "LogoutBtn";
-            this.LogoutBtn.Size = new System.Drawing.Size(198, 108);
+            this.LogoutBtn.Size = new System.Drawing.Size(198, 70);
             this.LogoutBtn.TabIndex = 6;
             this.LogoutBtn.Text = "Log Out";
             this.LogoutBtn.UseVisualStyleBackColor = false;
@@ -83,10 +85,9 @@
             this.ViewTasksBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ViewTasksBtn.Font = new System.Drawing.Font("Palatino Linotype", 14F);
             this.ViewTasksBtn.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.ViewTasksBtn.Location = new System.Drawing.Point(0, 143);
-            this.ViewTasksBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ViewTasksBtn.Location = new System.Drawing.Point(0, 93);
             this.ViewTasksBtn.Name = "ViewTasksBtn";
-            this.ViewTasksBtn.Size = new System.Drawing.Size(198, 108);
+            this.ViewTasksBtn.Size = new System.Drawing.Size(198, 70);
             this.ViewTasksBtn.TabIndex = 5;
             this.ViewTasksBtn.Text = "View All Tasks";
             this.ViewTasksBtn.UseVisualStyleBackColor = false;
@@ -98,9 +99,8 @@
             this.WelcomeLabel.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.WelcomeLabel.ForeColor = System.Drawing.Color.White;
             this.WelcomeLabel.Location = new System.Drawing.Point(0, 0);
-            this.WelcomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(198, 35);
+            this.WelcomeLabel.Size = new System.Drawing.Size(198, 23);
             this.WelcomeLabel.TabIndex = 0;
             this.WelcomeLabel.Text = "Welcome, Ahmed";
             this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -112,13 +112,14 @@
             this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer2.IsSplitterFixed = true;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.AutoScroll = true;
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.splitContainer2.Panel1.Controls.Add(this.assignedTaskCount);
+            this.splitContainer2.Panel1.Controls.Add(this.assignedTaskToMe);
             this.splitContainer2.Panel1.Controls.Add(this.OnViewProj);
             this.splitContainer2.Panel1.Controls.Add(this.OnHome);
             this.splitContainer2.Panel1.Controls.Add(this.LogoutBtn);
@@ -130,28 +131,25 @@
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer2.Panel2.Controls.Add(this.flowLayoutPanel1);
-            this.splitContainer2.Size = new System.Drawing.Size(1176, 586);
+            this.splitContainer2.Size = new System.Drawing.Size(784, 367);
             this.splitContainer2.SplitterDistance = 200;
-            this.splitContainer2.SplitterWidth = 6;
             this.splitContainer2.TabIndex = 0;
             // 
             // OnViewProj
             // 
             this.OnViewProj.BackColor = System.Drawing.Color.Red;
-            this.OnViewProj.Location = new System.Drawing.Point(0, 142);
-            this.OnViewProj.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.OnViewProj.Location = new System.Drawing.Point(0, 92);
             this.OnViewProj.Name = "OnViewProj";
-            this.OnViewProj.Size = new System.Drawing.Size(15, 108);
+            this.OnViewProj.Size = new System.Drawing.Size(10, 70);
             this.OnViewProj.TabIndex = 6;
             this.OnViewProj.Visible = false;
             // 
             // OnHome
             // 
             this.OnHome.BackColor = System.Drawing.Color.Red;
-            this.OnHome.Location = new System.Drawing.Point(0, 35);
-            this.OnHome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.OnHome.Location = new System.Drawing.Point(0, 23);
             this.OnHome.Name = "OnHome";
-            this.OnHome.Size = new System.Drawing.Size(15, 108);
+            this.OnHome.Size = new System.Drawing.Size(10, 70);
             this.OnHome.TabIndex = 2;
             // 
             // HomeBtn
@@ -165,24 +163,31 @@
             this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HomeBtn.Font = new System.Drawing.Font("Palatino Linotype", 14F);
             this.HomeBtn.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.HomeBtn.Location = new System.Drawing.Point(0, 35);
-            this.HomeBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.HomeBtn.Location = new System.Drawing.Point(0, 23);
             this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(198, 108);
+            this.HomeBtn.Size = new System.Drawing.Size(198, 70);
             this.HomeBtn.TabIndex = 9;
             this.HomeBtn.Text = "Home";
             this.HomeBtn.UseVisualStyleBackColor = false;
             this.HomeBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.HomeBtn_MouseClick);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(578, 365);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Felix Titling", 14F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(71, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(47, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 33);
+            this.label1.Size = new System.Drawing.Size(174, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Task Manager";
             // 
@@ -192,7 +197,6 @@
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -206,20 +210,31 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1176, 632);
+            this.splitContainer1.Size = new System.Drawing.Size(784, 411);
             this.splitContainer1.SplitterDistance = 40;
-            this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 4;
+            // 
+            // assignedTaskCount
+            // 
+            this.assignedTaskCount.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.assignedTaskCount.AutoSize = true;
+            this.assignedTaskCount.BackColor = System.Drawing.Color.Red;
+            this.assignedTaskCount.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignedTaskCount.ForeColor = System.Drawing.Color.White;
+            this.assignedTaskCount.Location = new System.Drawing.Point(131, 174);
+            this.assignedTaskCount.Name = "assignedTaskCount";
+            this.assignedTaskCount.Size = new System.Drawing.Size(15, 16);
+            this.assignedTaskCount.TabIndex = 11;
+            this.assignedTaskCount.Text = "1";
             // 
             // CloseBtn
             // 
-            this.CloseBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.CloseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.CloseBtn.Image = global::Task_Manager.Properties.Resources.Close_128;
-            this.CloseBtn.Location = new System.Drawing.Point(302, 0);
-            this.CloseBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CloseBtn.Location = new System.Drawing.Point(744, 0);
             this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Size = new System.Drawing.Size(53, 54);
+            this.CloseBtn.Size = new System.Drawing.Size(40, 40);
             this.CloseBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.CloseBtn.TabIndex = 1;
             this.CloseBtn.TabStop = false;
@@ -228,35 +243,39 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Task_Manager.Properties.Resources.Task_03_128;
-            this.pictureBox1.Location = new System.Drawing.Point(8, -8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(5, -5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 51);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // flowLayoutPanel1
+            // assignedTaskToMe
             // 
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(968, 584);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.assignedTaskToMe.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.assignedTaskToMe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.assignedTaskToMe.Image = global::Task_Manager.Properties.Resources.Bell_128;
+            this.assignedTaskToMe.Location = new System.Drawing.Point(50, 169);
+            this.assignedTaskToMe.Name = "assignedTaskToMe";
+            this.assignedTaskToMe.Size = new System.Drawing.Size(100, 100);
+            this.assignedTaskToMe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.assignedTaskToMe.TabIndex = 10;
+            this.assignedTaskToMe.TabStop = false;
+            this.assignedTaskToMe.MouseClick += new System.Windows.Forms.MouseEventHandler(this.assignedTaskToMe_MouseClick);
             // 
             // EmployeeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1176, 632);
+            this.ClientSize = new System.Drawing.Size(784, 411);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "EmployeeForm";
             this.Text = "EmployeeForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
@@ -267,6 +286,7 @@
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignedTaskToMe)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,5 +304,7 @@
         public System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox assignedTaskToMe;
+        private System.Windows.Forms.Label assignedTaskCount;
     }
 }

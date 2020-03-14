@@ -72,6 +72,75 @@ C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.p
 C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csprojAssemblyReference.cache
 C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewTasksUC.resources
 C:\Users\Mahmoud Emad\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewProjUC.resources
+E:\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe.config
+E:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.exe
+E:\Task_Manager\Task_Manager\obj\Debug\Task_Manager.pdb
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe.config
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\bin\Debug\Task_Manager.pdb
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csprojResolveAssemblyReference.cache
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddEmpUC.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddProjUC.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AssignTaskUC.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.EmployeeForm.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.LoginForm.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AdminForm.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ManagerForm.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.Properties.Resources.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewEmpUC.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewProjUC.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewTasksUC.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.GenerateResource.Cache
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.exe
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.pdb
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.CommentOrAssignUC.resources
+C:\Users\Karim72\Desktop\Project\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AcceptRejectAssignedTask.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AcceptRejectAssignedTask.resources
 C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AssignTaskUC.resources
+C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.CommentOrAssignUC.resources
 C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewProjUC.resources
 C:\Users\nader\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewTasksUC.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe.config
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.exe
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.pdb
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\bin\Debug\Task_Manager.pdb
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csprojResolveAssemblyReference.cache
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AcceptRejectAssignedTask.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddEmpUC.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddProjUC.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AssignTaskUC.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.CalendarUC.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.CommentOrAssignUC.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.EmployeeForm.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.LoginForm.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AdminForm.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ManagerForm.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.Properties.Resources.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewEmpUC.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewProjUC.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewTasksUC.resources
+C:\Users\Karim72\Desktop\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.GenerateResource.Cache
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe.config
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\bin\Debug\Task_Manager.exe
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\bin\Debug\Task_Manager.pdb
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AcceptRejectAssignedTask.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddEmpUC.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AddProjUC.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AssignTaskUC.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.CalendarUC.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.CommentOrAssignUC.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.EmployeeForm.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.LoginForm.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.AdminForm.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ManagerForm.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.Properties.Resources.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewEmpUC.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewProjUC.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.ViewTasksUC.resources
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.GenerateResource.cache
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.CoreCompileInputs.cache
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csproj.CopyComplete
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.exe
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.pdb
+C:\Users\Mahmoud Emad\Desktop\IS Project\sunday\Task_Manager\Task_Manager\obj\Debug\Task_Manager.csprojAssemblyReference.cache

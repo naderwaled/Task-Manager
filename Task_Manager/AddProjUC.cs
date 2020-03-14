@@ -14,10 +14,29 @@ namespace Task_Manager
     {
         // int addprojtask = 0;
         List<EmployeeClass> managername = new List<EmployeeClass>();
+        public int project_id= new int();
 
-        public AddProjUC()
+        public AddProjUC(string edit)
         {
             InitializeComponent();
+            if (edit == "Add")
+            {
+                FinishAddProjBtn.Visible = true;
+                Finisheditbtn.Visible = false;
+            }
+           
+           else  {
+                cNameBox.Visible = false;
+                cNameLabel.Visible = false;
+                cPhoneBox.Visible = false;
+                cPhoneLabel.Visible = false;
+                cMailBox.Visible = false;
+                cMailLabel.Visible = false;
+                comboBox1.Visible = false;
+                label1.Visible = false;
+                FinishAddProjBtn.Visible = false;
+                Finisheditbtn.Visible = true;
+            }
         }
 
         private void AddProjUC_Load(object sender, EventArgs e)
@@ -33,7 +52,7 @@ namespace Task_Manager
 
         private void FinishProjBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(comboBox1.Text);
+          
             ProjectClass pro = new ProjectClass();
             pro.name = ProjNameTextbox.Text;
             pro.start_time = Convert.ToDateTime(startTime.Text);
@@ -47,18 +66,44 @@ namespace Task_Manager
                 if (managername[i].name == comboBox1.Text)
                 {
                     pro.id_manger = managername[i].id;
-                    MessageBox.Show(pro.id_manger.ToString());
                     break;
                 }
             }
             pro.description = ProjDescription.Text;
             AdminClass adm = new AdminClass();
             adm.addproject(pro);
+
+            ProjNameTextbox.Clear();
+            cNameBox.Clear();
+            cMailBox.Clear();
+            cPhoneBox.Clear();
+            ProjDescription.Clear();
+            comboBox1.Text = "";
+            MessageBox.Show("Project Added Successfully");
         }
 
         private void closeBtn_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
+        }
+
+        private void Finisheditbtn_MouseClick(object sender, MouseEventArgs e)
+        {
+            ProjectClass pro = new ProjectClass();
+            pro.id = project_id;
+            pro.name = ProjNameTextbox.Text;
+            pro.start_time = Convert.ToDateTime(startTime.Text);
+            pro.end_time = Convert.ToDateTime(EndTime.Text);
+            pro.description = ProjDescription.Text;
+            AdminClass adm = new AdminClass();
+            adm.editproject(pro);
+            MessageBox.Show("Edited Successfully");
+            this.Hide();
+            
+
+          
+
+
         }
 
 
